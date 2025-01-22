@@ -1,0 +1,903 @@
+[{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed36"
+  },
+  "name": "Apple iPhone 14 Pro Max",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "product_description": "Apple's flagship smartphone with A16 Bionic chip and Dynamic Island.",
+  "price": 139999,
+  "discount": 4.9,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 26,
+  "createdAt": "2024-01-15T08:45:00Z",
+  "updatedAt": {
+    "$date": "2025-01-08T10:28:02.464Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed37"
+  },
+  "name": "Samsung Galaxy S23 Ultra",
+  "brand": "Samsung",
+  "seller": "Tech Hub",
+  "product_description": "High-end smartphone with a 200 MP camera and Snapdragon 8 Gen 2 processor.",
+  "price": 124999,
+  "discount": 10,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 40,
+  "createdAt": "2024-02-01T10:30:00Z",
+  "updatedAt": "2024-02-05T15:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed3b"
+  },
+  "name": "HP Pavilion Gaming 15",
+  "brand": "HP",
+  "seller": "Laptop Zone",
+  "product_description": "Affordable gaming laptop with Ryzen 5 processor and GTX 1650 graphics.",
+  "price": 65999,
+  "discount": 15,
+  "ratings": 4.3,
+  "cod_availability": true,
+  "total_stock_availability": 50,
+  "createdAt": "2024-05-10T12:00:00Z",
+  "updatedAt": "2024-05-12T16:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed40"
+  },
+  "name": "Samsung Galaxy Watch 6",
+  "brand": "Samsung",
+  "seller": "Samsung Store",
+  "product_description": "Premium smartwatch with rotating bezel and advanced fitness tracking.",
+  "price": 29999,
+  "discount": 10,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 70,
+  "createdAt": "2024-07-20T11:00:00Z",
+  "updatedAt": "2024-07-22T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed47"
+  },
+  "name": "Motorola Edge 40 Neo",
+  "brand": "Motorola",
+  "seller": "Moto Hub",
+  "product_description": "Mid-range smartphone with pOLED display and MediaTek Dimensity 7030.",
+  "price": 22999,
+  "discount": 12,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 90,
+  "createdAt": "2024-09-20T08:00:00Z",
+  "updatedAt": "2024-09-23T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed49"
+  },
+  "name": "Lenovo Legion 5 Pro",
+  "brand": "Lenovo",
+  "seller": "Lenovo Store",
+  "product_description": "High-performance gaming laptop with Ryzen 7 and RTX 3060 graphics.",
+  "price": 139999,
+  "discount": 12,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 20,
+  "createdAt": "2024-10-01T09:30:00Z",
+  "updatedAt": "2024-10-05T13:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4a"
+  },
+  "name": "MSI Katana GF66",
+  "brand": "MSI",
+  "seller": "MSI Official",
+  "product_description": "Affordable gaming laptop with Intel Core i5 and RTX 3050 graphics.",
+  "price": 82999,
+  "discount": 15,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-10-10T10:00:00Z",
+  "updatedAt": "2024-10-12T15:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4b"
+  },
+  "name": "Asus Vivobook Pro 14 OLED",
+  "brand": "Asus",
+  "seller": "Asus Store",
+  "product_description": "Compact and powerful laptop with OLED display and Ryzen 7.",
+  "price": 94999,
+  "discount": 18,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 30,
+  "createdAt": "2024-10-15T08:45:00Z",
+  "updatedAt": "2024-10-18T14:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4f"
+  },
+  "name": "Fire-Boltt Visionary",
+  "brand": "Fire-Boltt",
+  "seller": "Fire-Boltt Official",
+  "product_description": "Affordable smartwatch with AMOLED display and Bluetooth calling.",
+  "price": 500,
+  "discount": 25,
+  "ratings": 4.2,
+  "cod_availability": true,
+  "total_stock_availability": 150,
+  "createdAt": "2024-11-10T08:00:00Z",
+  "updatedAt": "2024-11-12T14:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed52"
+  },
+  "name": "boAt Aavante Bar 3150D",
+  "brand": "boAt",
+  "seller": "boAt Store",
+  "product_description": "Affordable soundbar with Dolby Audio and deep bass.",
+  "price": 8999,
+  "discount": 20,
+  "ratings": 4.3,
+  "cod_availability": true,
+  "total_stock_availability": 120,
+  "createdAt": "2024-11-25T09:00:00Z",
+  "updatedAt": "2024-11-28T15:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed56"
+  },
+  "name": "OnePlus 50-inch Y1S Pro 4K Smart TV",
+  "brand": "OnePlus",
+  "seller": "OnePlus Store",
+  "product_description": "Smart TV with 4K UHD display, Android TV, and Dolby Audio.",
+  "price": 33999,
+  "discount": 18,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 40,
+  "createdAt": "2024-12-04T11:00:00Z",
+  "updatedAt": "2024-12-06T13:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed59"
+  },
+  "name": "Samsung 7 kg Fully Automatic Front Load Washing Machine (WW70T4020EE1TL)",
+  "brand": "Samsung",
+  "seller": "Samsung Official Store",
+  "product_description": "Energy-efficient front-load washer with Diamond Drum and Eco Bubble technology.",
+  "price": 34999,
+  "discount": 10,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 35,
+  "createdAt": "2024-12-07T10:30:00Z",
+  "updatedAt": "2024-12-09T15:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5b"
+  },
+  "name": "Whirlpool 7.5 kg Top Load Fully Automatic Washing Machine (WM ROYAL PLUS 7.5)",
+  "brand": "Whirlpool",
+  "seller": "Whirlpool Store",
+  "product_description": "Fully automatic top-load washer with 6th Sense Technology and Hard Water Wash.",
+  "price": 23999,
+  "discount": 18,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 40,
+  "createdAt": "2024-12-09T14:00:00Z",
+  "updatedAt": "2024-12-11T16:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5d"
+  },
+  "name": "LG 1.5 Ton 5 Star AI Dual Inverter Split AC (PS-Q19YNZE)",
+  "brand": "LG",
+  "seller": "LG Electronics",
+  "product_description": "Advanced split AC with AI Convertible 6-in-1 cooling and HD Filter with Anti-Virus protection.",
+  "price": 44999,
+  "discount": 20,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 15,
+  "createdAt": "2024-12-11T12:45:00Z",
+  "updatedAt": "2024-12-13T15:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5f"
+  },
+  "name": "Hitachi 2 Ton 5 Star Inverter Split AC (RSNG317HCEA)",
+  "brand": "Hitachi",
+  "seller": "Hitachi Appliances",
+  "product_description": "Powerful inverter split AC with Expandable Cooling and Auto Coil Dry technology.",
+  "price": 61999,
+  "discount": 18,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 10,
+  "createdAt": "2024-12-13T14:00:00Z",
+  "updatedAt": "2024-12-15T16:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed62"
+  },
+  "name": "Samsung Galaxy Z Fold 5",
+  "brand": "Samsung",
+  "seller": "Samsung Official",
+  "product_description": "Premium foldable smartphone with dual AMOLED displays and S Pen support.",
+  "price": 154999,
+  "discount": 7,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 20,
+  "createdAt": "2024-12-01T09:00:00Z",
+  "updatedAt": "2024-12-03T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed63"
+  },
+  "name": "Dell XPS 15 (9520)",
+  "brand": "Dell",
+  "seller": "Dell Store",
+  "product_description": "High-end laptop with 12th Gen Intel i7, 3.5K OLED display, and NVIDIA RTX 3050.",
+  "price": 184999,
+  "discount": 10,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 15,
+  "createdAt": "2024-12-05T08:45:00Z",
+  "updatedAt": "2024-12-07T13:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed64"
+  },
+  "name": "Apple Watch Ultra 2",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "product_description": "Rugged smartwatch designed for extreme outdoor adventures, with advanced health tracking.",
+  "price": 89999,
+  "discount": 5,
+  "ratings": 4.9,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-12-08T09:15:00Z",
+  "updatedAt": "2024-12-10T14:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed65"
+  },
+  "name": "Sony SRS-XG500",
+  "brand": "Sony",
+  "seller": "Sony Store",
+  "product_description": "Portable Bluetooth speaker with powerful bass, IP66 water resistance, and 30-hour battery life.",
+  "price": 32990,
+  "discount": 8,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 35,
+  "createdAt": "2024-12-10T11:30:00Z",
+  "updatedAt": "2024-12-12T16:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed39"
+  },
+  "name": "Realme Narzo 60 Pro 5G",
+  "brand": "Realme",
+  "seller": "Realme Store",
+  "product_description": "Mid-range 5G smartphone with curved AMOLED display and MediaTek Dimensity 7050.",
+  "price": 23999,
+  "discount": 15,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 80,
+  "createdAt": "2024-04-10T08:00:00Z",
+  "updatedAt": "2024-04-12T13:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4c"
+  },
+  "name": "MacBook Pro M2 Pro (16-inch)",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "product_description": "Professional-grade laptop with M2 Pro chip and Liquid Retina XDR display.",
+  "price": 229999,
+  "discount": 5,
+  "ratings": 4.9,
+  "cod_availability": true,
+  "total_stock_availability": 10,
+  "createdAt": "2024-10-20T11:00:00Z",
+  "updatedAt": "2024-10-25T16:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4d"
+  },
+  "name": "Amazfit T-Rex 2",
+  "brand": "Amazfit",
+  "seller": "Wearable Hub",
+  "product_description": "Rugged smartwatch with military-grade durability and GPS tracking.",
+  "price": 14999,
+  "discount": 20,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 70,
+  "createdAt": "2024-10-30T09:30:00Z",
+  "updatedAt": "2024-11-02T14:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed4e"
+  },
+  "name": "Garmin Forerunner 265",
+  "brand": "Garmin",
+  "seller": "Garmin Store",
+  "product_description": "Advanced smartwatch with multi-sport tracking and AMOLED display.",
+  "price": 49999,
+  "discount": 10,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-11-05T08:15:00Z",
+  "updatedAt": "2024-11-08T13:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed50"
+  },
+  "name": "JBL PartyBox 310",
+  "brand": "JBL",
+  "seller": "JBL Store",
+  "product_description": "Powerful Bluetooth party speaker with dynamic light effects.",
+  "price": 32999,
+  "discount": 10,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 40,
+  "createdAt": "2024-11-15T11:30:00Z",
+  "updatedAt": "2024-11-18T16:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed51"
+  },
+  "name": "Sony HT-S40R",
+  "brand": "Sony",
+  "seller": "Sony Store",
+  "product_description": "5.1 channel soundbar with Bluetooth connectivity and immersive audio.",
+  "price": 24999,
+  "discount": 15,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 50,
+  "createdAt": "2024-11-20T10:15:00Z",
+  "updatedAt": "2024-11-22T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed58"
+  },
+  "name": "IFB 8 kg Front Load Washing Machine (Senator WXS)",
+  "brand": "IFB",
+  "seller": "IFB Appliances",
+  "product_description": "Front-load washing machine with 1400 RPM, Aqua Energie, and Cradle Wash.",
+  "price": 42999,
+  "discount": 15,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-12-06T09:15:00Z",
+  "updatedAt": "2024-12-08T12:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed61"
+  },
+  "name": "Carrier 1.5 Ton 4 Star Inverter Split AC (CAS18EB4R32F0)",
+  "brand": "Carrier",
+  "seller": "Carrier Appliances",
+  "product_description": "Efficient inverter split AC with FlexiCool Technology and PM 2.5 Filter.",
+  "price": 39999,
+  "discount": 15,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 20,
+  "createdAt": "2024-12-15T11:00:00Z",
+  "updatedAt": "2024-12-17T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed66"
+  },
+  "name": "OnePlus Pad Go",
+  "brand": "OnePlus",
+  "seller": "OnePlus Store",
+  "product_description": "Affordable tablet with 2.5K display, Dolby Atmos, and long battery life.",
+  "price": 22999,
+  "discount": 12,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 50,
+  "createdAt": "2024-12-15T09:30:00Z",
+  "updatedAt": "2024-12-17T14:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed38"
+  },
+  "name": "OnePlus 11R 5G",
+  "brand": "OnePlus",
+  "seller": "OnePlus Official",
+  "product_description": "Premium smartphone with Snapdragon 8+ Gen 1 processor and Fluid AMOLED display.",
+  "price": 39999,
+  "discount": 12,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 60,
+  "createdAt": "2024-03-05T09:15:00Z",
+  "updatedAt": "2024-03-08T11:50:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed3c"
+  },
+  "name": "Dell Inspiron 16 Plus",
+  "brand": "Dell",
+  "seller": "Dell Official",
+  "product_description": "High-performance laptop with Intel Core i7 and 16-inch 3K display.",
+  "price": 99999,
+  "discount": 18,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 20,
+  "createdAt": "2024-06-01T09:00:00Z",
+  "updatedAt": "2024-06-03T12:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed41"
+  },
+  "name": "Sony SRS-XB43",
+  "brand": "Sony",
+  "seller": "Sony Official",
+  "product_description": "Powerful Bluetooth speaker with Extra Bass and IP67 rating.",
+  "price": 17999,
+  "discount": 15,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 60,
+  "createdAt": "2024-08-05T10:15:00Z",
+  "updatedAt": "2024-08-08T12:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed44"
+  },
+  "name": "Google Pixel 8 Pro",
+  "brand": "Google",
+  "seller": "Google Store",
+  "product_description": "Flagship smartphone with Tensor G3 chip and advanced AI features.",
+  "price": 109999,
+  "discount": 8,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 35,
+  "createdAt": "2024-09-01T08:15:00Z",
+  "updatedAt": "2024-09-05T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed46"
+  },
+  "name": "Oppo Reno 10 Pro+ 5G",
+  "brand": "Oppo",
+  "seller": "Oppo Store",
+  "product_description": "5G smartphone with curved AMOLED display and 100W charging.",
+  "price": 54999,
+  "discount": 15,
+  "ratings": 4.6,
+  "cod_availability": true,
+  "total_stock_availability": 60,
+  "createdAt": "2024-09-15T10:00:00Z",
+  "updatedAt": "2024-09-18T13:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed54"
+  },
+  "name": "Sony Bravia 65-inch 4K Ultra HD Smart OLED TV (XR-65A80K)",
+  "brand": "Sony",
+  "seller": "Sony Center",
+  "product_description": "Premium OLED TV with XR Cognitive Processor and Dolby Vision.",
+  "price": 199999,
+  "discount": 10,
+  "ratings": 4.9,
+  "cod_availability": true,
+  "total_stock_availability": 10,
+  "createdAt": "2024-12-02T14:00:00Z",
+  "updatedAt": "2024-12-04T16:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5c"
+  },
+  "name": "Voltas 1.5 Ton 3 Star Inverter Split AC (SAC_183V_ADW)",
+  "brand": "Voltas",
+  "seller": "Voltas Official Store",
+  "product_description": "Energy-efficient inverter split AC with Turbo Cooling and Active Dehumidifier.",
+  "price": 35999,
+  "discount": 15,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-12-10T11:30:00Z",
+  "updatedAt": "2024-12-12T14:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5e"
+  },
+  "name": "Daikin 1.5 Ton 3 Star Split AC (FTKL50TV)",
+  "brand": "Daikin",
+  "seller": "Daikin Store",
+  "product_description": "Efficient split AC with Coanda airflow and Power Chill operation.",
+  "price": 37999,
+  "discount": 10,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 30,
+  "createdAt": "2024-12-12T10:00:00Z",
+  "updatedAt": "2024-12-14T13:15:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed3a"
+  },
+  "name": "Redmi Note 12 Pro+ 5G",
+  "brand": "Redmi",
+  "seller": "Mi Store",
+  "product_description": "Mid-range smartphone with a 200 MP camera and 120W HyperCharge.",
+  "price": 29999,
+  "discount": 10,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 100,
+  "createdAt": "2024-04-25T07:30:00Z",
+  "updatedAt": "2024-04-28T14:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed3d"
+  },
+  "name": "MacBook Air M2 (2023)",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "product_description": "Ultra-slim and powerful laptop with M2 chip and Retina display.",
+  "price": 124999,
+  "discount": 5,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 15,
+  "createdAt": "2024-06-20T10:00:00Z",
+  "updatedAt": "2024-06-25T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed3f"
+  },
+  "name": "Amazfit GTS 4 Mini",
+  "brand": "Amazfit",
+  "seller": "Wearable World",
+  "product_description": "Compact smartwatch with AMOLED display and GPS tracking.",
+  "price": 6999,
+  "discount": 20,
+  "ratings": 4.3,
+  "cod_availability": true,
+  "total_stock_availability": 100,
+  "createdAt": "2024-07-10T08:00:00Z",
+  "updatedAt": "2024-07-15T10:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed42"
+  },
+  "name": "JBL Charge 5",
+  "brand": "JBL",
+  "seller": "Sound Hub",
+  "product_description": "Portable Bluetooth speaker with deep bass and 20-hour battery life.",
+  "price": 13999,
+  "discount": 12,
+  "ratings": 4.4,
+  "cod_availability": true,
+  "total_stock_availability": 90,
+  "createdAt": "2024-08-15T08:00:00Z",
+  "updatedAt": "2024-08-18T13:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed43"
+  },
+  "name": "boAt Stone 1200F",
+  "brand": "boAt",
+  "seller": "boAt Store",
+  "product_description": "Rugged Bluetooth speaker with RGB lights and IPX7 rating.",
+  "price": 999,
+  "discount": 25,
+  "ratings": 4.2,
+  "cod_availability": true,
+  "total_stock_availability": 150,
+  "createdAt": "2024-08-25T07:45:00Z",
+  "updatedAt": "2024-08-30T15:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed45"
+  },
+  "name": "Vivo X90 Pro",
+  "brand": "Vivo",
+  "seller": "Vivo Official",
+  "product_description": "Premium smartphone with Zeiss optics and Dimensity 9200 chip.",
+  "price": 84999,
+  "discount": 10,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 40,
+  "createdAt": "2024-09-10T09:45:00Z",
+  "updatedAt": "2024-09-12T16:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed48"
+  },
+  "name": "Xiaomi 13 Pro",
+  "brand": "Xiaomi",
+  "seller": "Mi Store",
+  "product_description": "Flagship smartphone with Leica cameras and Snapdragon 8 Gen 2.",
+  "price": 79999,
+  "discount": 10,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 50,
+  "createdAt": "2024-09-25T11:30:00Z",
+  "updatedAt": "2024-09-28T15:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed53"
+  },
+  "name": "Samsung Crystal 4K UHD Smart TV 55-inch (UA55AUE65AKXXL)",
+  "brand": "Samsung",
+  "seller": "Samsung Official Store",
+  "product_description": "4K UHD Smart TV with Crystal Processor 4K and built-in voice assistant.",
+  "price": 47999,
+  "discount": 15,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 30,
+  "createdAt": "2024-12-01T10:00:00Z",
+  "updatedAt": "2024-12-03T12:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed55"
+  },
+  "name": "LG 43-inch 4K UHD Smart LED TV (43UQ7500PSF)",
+  "brand": "LG",
+  "seller": "LG Electronics",
+  "product_description": "Affordable 4K UHD Smart TV with AI ThinQ and WebOS.",
+  "price": 29999,
+  "discount": 20,
+  "ratings": 4.5,
+  "cod_availability": true,
+  "total_stock_availability": 25,
+  "createdAt": "2024-12-03T10:00:00Z",
+  "updatedAt": "2024-12-05T12:45:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed57"
+  },
+  "name": "TCL 75-inch 4K QLED Smart TV (75C635)",
+  "brand": "TCL",
+  "seller": "TCL Official Store",
+  "product_description": "Large-screen QLED TV with HDR10+ and Google Assistant.",
+  "price": 99999,
+  "discount": 12,
+  "ratings": 4.7,
+  "cod_availability": true,
+  "total_stock_availability": 20,
+  "createdAt": "2024-12-05T14:00:00Z",
+  "updatedAt": "2024-12-07T16:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed5a"
+  },
+  "name": "LG 6.5 kg Semi Automatic Top Load Washing Machine (P6510NBAY)",
+  "brand": "LG",
+  "seller": "LG Electronics",
+  "product_description": "Semi-automatic washing machine with Roller Jet Pulsator and Wind Jet Dry.",
+  "price": 13999,
+  "discount": 12,
+  "ratings": 4.3,
+  "cod_availability": true,
+  "total_stock_availability": 50,
+  "createdAt": "2024-12-08T12:00:00Z",
+  "updatedAt": "2024-12-10T14:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d198c743bf56d2f73ed60"
+  },
+  "name": "Blue Star 1.5 Ton 3 Star Portable AC (PC15DB)",
+  "brand": "Blue Star",
+  "seller": "Blue Star Official",
+  "product_description": "Portable AC with easy mobility and anti-bacterial silver coating.",
+  "price": 27999,
+  "discount": 10,
+  "ratings": 4.2,
+  "cod_availability": true,
+  "total_stock_availability": 35,
+  "createdAt": "2024-12-14T12:15:00Z",
+  "updatedAt": "2024-12-16T15:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "677d1e79df570c0af6a0ebf5"
+  },
+  "name": "Vatsal23",
+  "brand": "Intern",
+  "seller": "Resume",
+  "price": 10000000,
+  "ratings": 5,
+  "cod_availability": true,
+  "total_stock_availability": 1,
+  "createdAt": {
+    "$date": "2025-01-07T12:30:49.436Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-07T12:30:49.436Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e170181573a0580077459"
+  },
+  "name": "Redmi Note 10",
+  "brand": "MI",
+  "seller": "Xioami",
+  "price": 2200000,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 5,
+  "createdAt": {
+    "$date": "2025-01-08T06:11:13.018Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T10:31:46.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e170181573a058007745c"
+  },
+  "name": "Redmi Note 11",
+  "brand": "MI",
+  "seller": "Xioami",
+  "price": 1600000,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 10,
+  "createdAt": {
+    "$date": "2025-01-08T06:11:13.097Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T10:31:46.611Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e170181573a058007745f"
+  },
+  "name": "Redmi Note 12",
+  "brand": "MI",
+  "seller": "Xioami",
+  "price": 1400000,
+  "ratings": 4.5,
+  "cod_availability": false,
+  "total_stock_availability": 8,
+  "createdAt": {
+    "$date": "2025-01-08T06:11:13.146Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T10:31:46.637Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e4125d7012fd55ee59ba8"
+  },
+  "name": "Apple 16 Pro Max",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "price": 200000,
+  "ratings": 5,
+  "cod_availability": true,
+  "total_stock_availability": 1,
+  "createdAt": {
+    "$date": "2025-01-08T09:11:01.966Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:11:01.966Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e42eb81581965c3dae84c"
+  },
+  "name": "Redmi note 7",
+  "brand": "MI",
+  "seller": "Xiaomi",
+  "price": 20000000,
+  "ratings": 4.8,
+  "cod_availability": true,
+  "total_stock_availability": 2,
+  "createdAt": {
+    "$date": "2025-01-08T09:18:35.953Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T09:18:35.953Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677e52267d69c36995c8edaa"
+  },
+  "name": "Apple 16 Pro Max2",
+  "brand": "Apple",
+  "seller": "Apple Store",
+  "price": 200000,
+  "ratings": 5,
+  "cod_availability": true,
+  "total_stock_availability": 1,
+  "createdAt": {
+    "$date": "2025-01-08T10:23:34.797Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-08T10:23:34.797Z"
+  },
+  "__v": 0
+}]
