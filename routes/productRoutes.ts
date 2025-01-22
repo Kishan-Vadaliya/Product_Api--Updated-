@@ -9,7 +9,10 @@ import {
   getProductById,
   updateProduct,
 } from "../controllers/productController";
-import { multipleValidateRequest, validateRequest } from "../middleware/validateRequest";
+import {
+  multipleValidateRequest,
+  validateRequest,
+} from "../middleware/validateRequest";
 
 const router = express.Router();
 
@@ -17,7 +20,11 @@ const router = express.Router();
 router.post("/CreateProduct", validateRequest, createProduct);
 
 // Route to create multiple products
-router.post("/CreateMultipleProducts", multipleValidateRequest, createMultipleProducts);
+router.post(
+  "/CreateMultipleProducts",
+  multipleValidateRequest,
+  createMultipleProducts
+);
 
 // Route to get all products
 router.get("/GetAllProducts", getAllProducts);

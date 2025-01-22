@@ -23,17 +23,30 @@ interface QueryFeatures {
   size?: string[];
 }
 
-const getFilteredSortedPaginatedProducts = async (queryFeatures: QueryFeatures) => {
-  const { search, ratings, priceMin, priceMax, sort, page = 1, limit = 25, category, colors, variants, size } =
-    queryFeatures;
+const getFilteredSortedPaginatedProducts = async (
+  queryFeatures: QueryFeatures
+) => {
+  const {
+    search,
+    ratings,
+    priceMin,
+    priceMax,
+    sort,
+    page = 1,
+    limit = 25,
+    category,
+    colors,
+    variants,
+    size,
+  } = queryFeatures;
 
-    if(queryFeatures['page'] && queryFeatures['page'] > 0) {
-      queryFeatures = {...queryFeatures, page: queryFeatures['page'] || 1}
-    }
+  if (queryFeatures["page"] && queryFeatures["page"] > 0) {
+    queryFeatures = { ...queryFeatures, page: queryFeatures["page"] || 1 };
+  }
 
-    if(queryFeatures['limit']  && queryFeatures['limit'] > 0) {
-      queryFeatures = {...queryFeatures, limit: queryFeatures['page'] || 25}
-    }
+  if (queryFeatures["limit"] && queryFeatures["limit"] > 0) {
+    queryFeatures = { ...queryFeatures, limit: queryFeatures["page"] || 25 };
+  }
 
   const query: any = {};
 

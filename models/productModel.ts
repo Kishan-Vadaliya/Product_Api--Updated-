@@ -12,7 +12,7 @@ export interface IProduct extends Document {
   total_stock_availability: number;
   category: string;
   isFeatured: boolean;
-  isActive: boolean; 
+  isActive: boolean;
   variants: string[]; // Array for multiple variant s
   colors: string[]; // Array for multiple colors
   size: string[]; // Array for multiple sizes
@@ -69,7 +69,7 @@ const ProductSchema: Schema<IProduct> = new Schema(
     category: {
       type: String,
       required: true,
-      enum: ['electronics', 'clothing', 'others'], // Add enum validation
+      enum: ["electronics", "clothing", "others"], // Add enum validation
     },
     isFeatured: {
       type: Boolean,
@@ -81,10 +81,10 @@ const ProductSchema: Schema<IProduct> = new Schema(
     },
     variants: {
       type: [String],
-      required: function() {
-        return this.category === 'electronics'; // Conditional requirement based on category
+      required: function () {
+        return this.category === "electronics"; // Conditional requirement based on category
       },
-      default: undefined
+      default: undefined,
     },
     colors: {
       type: [String],
@@ -92,10 +92,10 @@ const ProductSchema: Schema<IProduct> = new Schema(
     },
     size: {
       type: [String],
-      required: function() {
-        return this.category === 'clothing'; // Conditional requirement based on category
+      required: function () {
+        return this.category === "clothing"; // Conditional requirement based on category
       },
-      default: undefined
+      default: undefined,
     },
   },
   { timestamps: true }

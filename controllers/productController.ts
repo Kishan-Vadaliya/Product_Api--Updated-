@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import Product, { IProduct } from "../models/productModel";  
+import Product, { IProduct } from "../models/productModel";
 import { ApplicationError } from "../error-handler/applicationError";
 import getFilteredSortedPaginatedProducts from "../utils/features";
 import logger from "../utils/logger";
@@ -18,11 +18,11 @@ type AsyncRequestHandler = (
 
 // Helper function to validate category-specific fields
 const validateCategoryFields = (product: Partial<IProduct>): string | null => {
-  if (product.category === 'electronics' && (!product.variants?.length)) {
-    return 'Variants are required for electronics category';
+  if (product.category === "electronics" && !product.variants?.length) {
+    return "Variants are required for electronics category";
   }
-  if (product.category === 'clothing' && (!product.size?.length)) {
-    return 'Size is required for clothing category';
+  if (product.category === "clothing" && !product.size?.length) {
+    return "Size is required for clothing category";
   }
   return null;
 };
@@ -37,11 +37,11 @@ export const createProduct: AsyncRequestHandler = async (req, res, next) => {
 
     const product = await Product.create(req.body);
     logger.info(`Product created: ${product.name}`);
-    
+
     res.status(201).json({
       success: true,
-      data: product,        
-      message: "Product created successfully"
+      data: product,
+      message: "Product created successfully",
     });
   } catch (error: any) {
     logger.error(`Error creating product: ${error.message}`);
@@ -50,15 +50,23 @@ export const createProduct: AsyncRequestHandler = async (req, res, next) => {
 };
 
 // createMultipleProducts
-export const createMultipleProducts: AsyncRequestHandler = async (req, res, next) => {
+export const createMultipleProducts: AsyncRequestHandler = async (
+  req,
+  res,
+  next
+) => {
   try {
     const products = req.body;
     if (!Array.isArray(products) || products.length === 0) {
-      return next(new ApplicationError("Invalid or empty array of products provided", 400));
+      return next(
+        new ApplicationError("Invalid or empty array of products provided", 400)
+      );
     }
 
     if (products.length > 50) {
-      return next(new ApplicationError("Cannot create more than 50 products at once", 400));
+      return next(
+        new ApplicationError("Cannot create more than 50 products at once", 400)
+      );
     }
 
     const success = [];
@@ -72,7 +80,7 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
           return {
             isValid: false,
             index,
-            error: { field: 'category', message: categoryError }
+            error: { field: "category", message: categoryError },
           };
         }
 
@@ -81,7 +89,10 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
           return {
             isValid: false,
             index,
-            error: { field: 'name', message: `Product with name '${product.name}' already exists` }
+            error: {
+              field: "name",
+              message: `Product with name '${product.name}' already exists`,
+            },
           };
         }
 
@@ -90,7 +101,10 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
         return {
           isValid: false,
           index,
-          error: { field: 'unknown', message: err instanceof Error ? err.message : 'Unknown error' }
+          error: {
+            field: "unknown",
+            message: err instanceof Error ? err.message : "Unknown error",
+          },
         };
       }
     });
@@ -103,7 +117,7 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
         failed.push({
           index: result.index,
           product: products[result.index],
-          error: result.error
+          error: result.error,
         });
         continue;
       }
@@ -113,21 +127,23 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
         success.push({
           id: newProduct._id,
           name: newProduct.name,
-          message: "Created successfully"
+          message: "Created successfully",
         });
       } catch (err) {
         failed.push({
           index: result.index,
           product: products[result.index],
-          error: { 
-            field: 'validation',
-            message: err instanceof Error ? err.message : 'Creation failed'
-          }
+          error: {
+            field: "validation",
+            message: err instanceof Error ? err.message : "Creation failed",
+          },
         });
       }
     }
 
-    logger.info(`Bulk product creation: ${success.length} succeeded, ${failed.length} failed`);
+    logger.info(
+      `Bulk product creation: ${success.length} succeeded, ${failed.length} failed`
+    );
 
     res.status(201).json({
       success: true,
@@ -135,22 +151,32 @@ export const createMultipleProducts: AsyncRequestHandler = async (req, res, next
         total: products.length,
         success: success.length,
         failed: failed.length,
-        details: { success, failed }
-      }
+        details: { success, failed },
+      },
     });
   } catch (error) {
-    logger.error(`Error in bulk product creation: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    next(new ApplicationError('Bulk creation failed', 500));
+    logger.error(
+      `Error in bulk product creation: ${error instanceof Error ? error.message : "Unknown error"}`
+    );
+    next(new ApplicationError("Bulk creation failed", 500));
   }
 };
 
 // getAllProducts
-export const getAllProducts = async (req: Request, res: Response, next: NextFunction) => {
+export const getAllProducts = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const queryFeatures = {
       search: req.query.search as string,
-      priceMin: req.query.priceMin ? parseFloat(req.query.priceMin as string) : undefined,
-      priceMax: req.query.priceMax ? parseFloat(req.query.priceMax as string) : undefined,
+      priceMin: req.query.priceMin
+        ? parseFloat(req.query.priceMin as string)
+        : undefined,
+      priceMax: req.query.priceMax
+        ? parseFloat(req.query.priceMax as string)
+        : undefined,
       ratings: req.query.ratings as string,
       sort: req.query.sort as
         | "name"
@@ -166,14 +192,21 @@ export const getAllProducts = async (req: Request, res: Response, next: NextFunc
       page: req.query.page ? parseInt(req.query.page as string, 10) : 1,
       limit: req.query.limit ? parseInt(req.query.limit as string, 10) : 25,
       category: req.query.category as "electronics" | "clothing" | undefined,
-      colors: req.query.colors ? (req.query.colors as string).split(",") : undefined,
-      variants: req.query.variants ? (req.query.variants as string).split(",") : undefined,
+      colors: req.query.colors
+        ? (req.query.colors as string).split(",")
+        : undefined,
+      variants: req.query.variants
+        ? (req.query.variants as string).split(",")
+        : undefined,
       size: req.query.size ? (req.query.size as string).split(",") : undefined,
     };
 
-    const { products, total, page, limit } = await getFilteredSortedPaginatedProducts(queryFeatures);
+    const { products, total, page, limit } =
+      await getFilteredSortedPaginatedProducts(queryFeatures);
 
-    logger.info(`Fetched ${products.length} products from the database (Total: ${total})`);
+    logger.info(
+      `Fetched ${products.length} products from the database (Total: ${total})`
+    );
 
     res.status(200).json({
       success: true,
@@ -189,7 +222,11 @@ export const getAllProducts = async (req: Request, res: Response, next: NextFunc
 };
 
 // Get a product by ID
-export const getProductById = async (req: Request, res: Response, next: NextFunction) => {
+export const getProductById = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const product = await Product.findById(req.params.id);
     if (!product) {
@@ -204,7 +241,11 @@ export const getProductById = async (req: Request, res: Response, next: NextFunc
 };
 
 // Update Product by ID
-export const updateProduct = async (req: Request, res: Response, next: NextFunction) => {
+export const updateProduct = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const categoryError = validateCategoryFields(req.body);
     if (categoryError) {
@@ -220,10 +261,15 @@ export const updateProduct = async (req: Request, res: Response, next: NextFunct
     if (req.body.name && req.body.name !== product.name) {
       const existingProduct = await Product.findOne({
         name: req.body.name,
-        _id: { $ne: req.params.id }
+        _id: { $ne: req.params.id },
       });
       if (existingProduct) {
-        return next(new ApplicationError(`Product with name '${req.body.name}' already exists`, 400));
+        return next(
+          new ApplicationError(
+            `Product with name '${req.body.name}' already exists`,
+            400
+          )
+        );
       }
     }
 
@@ -234,22 +280,26 @@ export const updateProduct = async (req: Request, res: Response, next: NextFunct
       { new: true, runValidators: true }
     );
 
-
-
     logger.info(`Product updated: ${updatedProduct?.name}`);
     res.status(200).json({
       success: true,
       data: updatedProduct,
-      message: "Product updated successfully"
+      message: "Product updated successfully",
     });
   } catch (error) {
-    logger.error(`Error updating product: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    next(new ApplicationError('Update failed', 400));
+    logger.error(
+      `Error updating product: ${error instanceof Error ? error.message : "Unknown error"}`
+    );
+    next(new ApplicationError("Update failed", 400));
   }
 };
 
 // delete product by ID
-export const deleteProduct = async (req: Request, res: Response, next: NextFunction) => {
+export const deleteProduct = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const product = await Product.findByIdAndDelete(req.params.id);
     if (!product) {
@@ -258,7 +308,7 @@ export const deleteProduct = async (req: Request, res: Response, next: NextFunct
     logger.info(`Product with ID ${req.params.id} deleted successfully`);
     res.status(200).json({
       success: true,
-      message: "Product deleted successfully"
+      message: "Product deleted successfully",
     });
   } catch (error) {
     logger.error(`Error deleting product: ${(error as Error).message}`);
@@ -267,7 +317,11 @@ export const deleteProduct = async (req: Request, res: Response, next: NextFunct
 };
 
 // deleteMultipleProducts
-export const deleteMultipleProducts = async (req: Request, res: Response, next: NextFunction) => {
+export const deleteMultipleProducts = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
     const { ids } = req.body;
 
@@ -287,7 +341,10 @@ export const deleteMultipleProducts = async (req: Request, res: Response, next: 
           failed.push({ id, message: "Product not found" });
         }
       } catch (err) {
-        failed.push({ id, message: "Invalid ID format or error during deletion" });
+        failed.push({
+          id,
+          message: "Invalid ID format or error during deletion",
+        });
       }
     }
 
@@ -303,7 +360,9 @@ export const deleteMultipleProducts = async (req: Request, res: Response, next: 
       },
     });
   } catch (error) {
-    logger.error(`Error deleting multiple products: ${(error as Error).message}`);
+    logger.error(
+      `Error deleting multiple products: ${(error as Error).message}`
+    );
     next(new ApplicationError((error as Error).message, 500));
   }
 };
