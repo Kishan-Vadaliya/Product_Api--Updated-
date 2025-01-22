@@ -212,6 +212,7 @@ export const getAllProducts = async (
       success: true,
       total,
       page,
+      results: products.length,
       limit,
       data: products,
     });
