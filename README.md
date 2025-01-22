@@ -1,5 +1,3 @@
-
-```markdown:README.md
 # Product Management API
 
 A TypeScript-based RESTful API for managing products in an e-commerce platform. Built with Express.js and MongoDB, featuring robust validation, logging, and documentation.
@@ -32,7 +30,7 @@ A TypeScript-based RESTful API for managing products in an e-commerce platform. 
 
 1. Clone the repository:
 ```bash
-git clone <https://github.com/Kishan-Vadaliya/Product_Api--Updated-.git>
+git clone https://github.com/Kishan-Vadaliya/Product_Api--Updated-.git
 ```
 
 2. Install dependencies:
@@ -127,9 +125,9 @@ npm start
 ```
 
 ## API Documentation
-Access Swagger documentation at:
+Access Postman documentation at:
 ```
-http://localhost:3000/api-docs
+[https://documenter.getpostman.com/view/40407315/2sAYQcGWgc]
 ```
 
 ## Project Structure
