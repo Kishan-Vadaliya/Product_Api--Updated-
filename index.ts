@@ -4,8 +4,6 @@ import connectDB from "./config/db";
 import productRoutes from "./routes/productRoutes"; // Import product routes
 import { errorHandler } from "./error-handler/applicationError";
 import logger from "./utils/logger";
-import swaggerUi from "swagger-ui-express";
-import * as swaggerDocument from "./swagger.json";
 import apiLimiter from "./middleware/rateLimiter";
 
 dotenv.config();
@@ -13,9 +11,6 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-
-// Serve Swagger API documentation
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Rate limiting to all requests
 app.use(apiLimiter);
@@ -48,7 +43,7 @@ app.use((req, res) => {
   res.status(404).json({
     success: false,
     message:
-      "API not found. Please check our documentation for more information at http://localhost:3000/api-docs/",
+      "API not found. Please check our documentation for more information at https://documenter.getpostman.com/view/40407315/2sAYQcGWgc",
   });
 });
 
