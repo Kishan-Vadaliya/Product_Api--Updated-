@@ -16,7 +16,7 @@ A TypeScript-based RESTful API for managing products in an e-commerce platform. 
 - 📝 Comprehensive error handling
 - 🔒 Rate limiting
 - 📊 Winston logging
-- 📚 Swagger documentation
+- 📚 Postman documentation
 - 🔄 TypeScript type safety
 
 ## Project Setup
