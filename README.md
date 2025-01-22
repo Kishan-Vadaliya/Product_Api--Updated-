@@ -126,9 +126,7 @@ npm start
 
 ## API Documentation
 Access Postman documentation at:
-```
-[https://documenter.getpostman.com/view/40407315/2sAYQcGWgc]
-```
+[View Postman Documentation](https://documenter.getpostman.com/view/40407315/2sAYQcGWgc)
 
 ## Project Structure
 ```
